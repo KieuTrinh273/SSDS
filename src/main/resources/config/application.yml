@@ -234,3 +234,17 @@ jhipster:
 # ===================================================================
 
 # application:
+ssds:
+  api:
+    ref:
+      public: /api
+      external: /ext
+  config:
+    timezone: Asia/Ho_Chi_Minh
+external:
+  api:
+    partner:
+      google-maps-geocoding:
+        url: https://google-maps-geocoding.p.rapidapi.com/geocode/json?language=en&address=
+        host: google-maps-geocoding.p.rapidapi.com
+        key: f682bf441cmsh65c3115a1522186p13feaejsnaca6305c3b91

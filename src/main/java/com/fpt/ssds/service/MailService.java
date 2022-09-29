@@ -1,6 +1,5 @@
 package com.fpt.ssds.service;
 
-import com.fpt.ssds.domain.User;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import javax.mail.MessagingException;
@@ -76,8 +75,7 @@ public class MailService {
             log.warn("Email could not be sent to user '{}'", to, e);
         }
     }
-
-    @Async
+    /*@Async
     public void sendEmailFromTemplate(User user, String templateName, String titleKey) {
         if (user.getEmail() == null) {
             log.debug("Email doesn't exist for user '{}'", user.getLogin());
@@ -108,5 +106,5 @@ public class MailService {
     public void sendPasswordResetMail(User user) {
         log.debug("Sending password reset email to '{}'", user.getEmail());
         sendEmailFromTemplate(user, "mail/passwordResetEmail", "email.reset.title");
-    }
+    }*/
 }

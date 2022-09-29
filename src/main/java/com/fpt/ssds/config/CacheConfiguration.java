@@ -69,14 +69,14 @@ public class CacheConfiguration {
         return RedissonConfiguration.fromInstance(Redisson.create(config), jcacheConfig);
     }
 
-    @Bean
+    /*@Bean
     public JCacheManagerCustomizer cacheManagerCustomizer(javax.cache.configuration.Configuration<Object, Object> jcacheConfiguration) {
         return cm -> {
             createCache(cm, com.fpt.ssds.repository.UserRepository.USERS_BY_LOGIN_CACHE, jcacheConfiguration);
             createCache(cm, com.fpt.ssds.repository.UserRepository.USERS_BY_EMAIL_CACHE, jcacheConfiguration);
             // jhipster-needle-redis-add-entry
         };
-    }
+    }*/
 
     private void createCache(
         javax.cache.CacheManager cm,
